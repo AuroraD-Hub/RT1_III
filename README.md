@@ -25,6 +25,6 @@ roslaunch final_assignment simulation_gmapping
 roslaunch final_assignment move_base
 rosrun final_assignment interface_node
 ```
-Gazebo and Rviz environment will be available.
+Gazebo and Rviz environment is now available.
 
 ## Assignment
