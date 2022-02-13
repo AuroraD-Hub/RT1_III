@@ -43,6 +43,7 @@ By publishing in `move_base/goal` topic, the user can give (x,y) position of the
 * *target_pose* 
 * *pose*
 * *position*
+
 And then the following fields can be modify:
 * *x*,*y*: target new coordinates
 
@@ -60,7 +61,7 @@ By publishing in `move_base/cancel` topic, the current goal can be cancelled bot
 
 This topic type is `actionlib_msgs/GoalID`.
 
-### Scanning obstacles ###
+### Scan obstacles ###
 By subscribing to the `scan` topic, the node has access to many fields among which `rages` is used to get the information needed: it is an array of 721 elements which contains the distances from the nearest obstacles in a [0 180]° vision range.
 
 This topic type is `sensor_msgs::LaserScan`.
