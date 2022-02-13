@@ -57,7 +57,7 @@ By subscribing to `move_base/status` topic, the node has access to many fields a
 This topic type is `actionlib_msgs/GoalStatusArray`.
 
 ### Cancel goal ###
-By publishing in `move_base/cancel` topic, the current goal can be cancelled both by the user and if the goal is unreachable. It only need to publish an ampty request.
+By publishing in `move_base/cancel` topic, the current goal can be cancelled both by the user and if the goal is unreachable. It only needs to publish an empty request.
 
 This topic type is `actionlib_msgs/GoalID`.
 
