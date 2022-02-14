@@ -1,0 +1,17 @@
+bool succ
+bool rej
+float32 right
+float32 center
+float32 left
+char dir
+bool mod1
+bool mod2
+---
+bool s
+bool re
+float32 ri
+float32 c
+float32 l
+char d
+bool m1
+bool m2

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node name="service_node" pkg="final_srv" type="service_node"/>
+	<node name="interface_node" pkg="final_assignment" type="interface_node"/>
+	<node name="drive_node" pkg="final_assignment" type="drive_node"/>
+	<node name="callbacks_node" pkg="final_assignment" type="callbacks_node"/>
+</launch>
