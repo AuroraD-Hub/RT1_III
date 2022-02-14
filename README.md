@@ -19,13 +19,13 @@ git checkout noetic
 ```
 At last, download this package and build the workspace by executing `catkin_make` command.
 
-Now, to run the simulation digit respectively in three different terminals:
+Now, to run this version of the simulation digit respectively in three different terminals:
 ```
-roslaunch final_assignment simulation_gmapping
-roslaunch final_assignment move_base
-rosrun final_assignment interface_node
+roslaunch final_assignment simulation_gmapping.launch
+roslaunch final_assignment move_base.launch
+roslaunch final_assignment interface.launch
 ```
-Gazebo and Rviz environment is now available.
+Gazebo and RViz environment is now available.
 
 ## Assignment
 For this assignment a software architecture for the control of the robot is developed. This architecture is defined as an user interface that takes user requests and then execute the corresponding controlling mode. There are three different robot control modalities:
@@ -79,3 +79,10 @@ By publishing into the `/cmd_vel` topic, the node can modify its fields:
   * *z*: direction of the angular velocity 
 
 This topic type is `geometry_msgs::Twist`.
+
+## Simulation custom service ##
+A custum service `/service` handles communication between all nodes by passing information about:
+* *state of the goal*: SUCCESSED or REJECTED
+* *minimum distances from obstacles*: min_r, min_c and min_l
+* *keyboard commands*: dir
+* *control modality*: user driving or user assisted driving
