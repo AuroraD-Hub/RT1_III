@@ -33,13 +33,7 @@ For this assignment a software architecture for the control of the robot is deve
 * the user takes full control of the robot and drives it with the keyboard
 * the user takes control of the robot, but it is assisted to avoid collisions
 
-This interface is developed as a node that subscribes and publish to different topics and it implements different functions for every modality.
-The following flowcharts describe the scripts of one possible solution implemented:
-
-![main](https://user-images.githubusercontent.com/72380912/153770536-1006571e-1635-4beb-976f-2b8cfbbba386.png)
-![callback_functions](https://user-images.githubusercontent.com/72380912/153770540-3fa45652-b975-4db0-8b25-ee2591a3209d.png)
-![modalities](https://user-images.githubusercontent.com/72380912/153770541-14d291b7-5929-4b9a-b4c2-36d3e3d8ed09.png)
-![driving_commands](https://user-images.githubusercontent.com/72380912/153770542-12968b78-f657-4e5f-82ac-11aeb5ed888e.png)
+This interface is developed as three nodes that subscribes and publish to different topics and it implements different functions for every modality. The 'interface_node' manages directly the user interface, 'callbacks_node' calls every time the callback functions of the subscribers and 'driver_node' control the robot both with respect to the minimum distances from the obstacles and to user inputs in user-controlling modalitites. This nodes communicates with custom service.
 
 ## Simulation topics used
 ### Reach new goal ###
