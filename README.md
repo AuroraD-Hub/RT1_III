@@ -21,8 +21,8 @@ At last, download this package and build the workspace by executing `catkin_make
 
 Now, to run the simulation digit respectively in three different terminals:
 ```
-roslaunch final_assignment simulation_gmapping
-roslaunch final_assignment move_base
+roslaunch final_assignment simulation_gmapping.launch
+roslaunch final_assignment move_base.launch
 rosrun final_assignment interface_node
 ```
 Gazebo and RViz environment is now available.
