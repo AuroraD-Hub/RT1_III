@@ -4,9 +4,8 @@ This third assignment consists in a robot simulation based on ROS environment an
 Some parameters has been already set in [slam_gmapping package](https://github.com/CarmineD8/slam_gmapping) needed for this simulation.
 
 ## Installing and running
-At first, install the above packages in your ROS workspace by executing in terminal:
+At first, install the above package in your ROS workspace by executing in terminal:
 ```
-git clone https://github.com/CarmineD8/final_assignment
 git clone https://github.com/CarmineD8/slam_gmapping
 ```
 Since ROS noetic is used, make sure to also have the 'ros navigation stack' installed by executing:
