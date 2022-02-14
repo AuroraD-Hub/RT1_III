@@ -25,7 +25,7 @@ roslaunch final_assignment simulation_gmapping
 roslaunch final_assignment move_base
 rosrun final_assignment interface_node
 ```
-Gazebo and Rviz environment is now available.
+Gazebo and RViz environment is now available.
 
 ## Assignment
 For this assignment a software architecture for the control of the robot is developed. This architecture is defined as an user interface that takes user requests and then execute the corresponding controlling mode. There are three different robot control modalities:
