@@ -6,7 +6,6 @@ Some parameters has been already set in [slam_gmapping package](https://github.c
 ## Installing and running
 At first, install the above packages in your ROS workspace by executing in terminal:
 ```
-git clone https://github.com/CarmineD8/final_assignment
 git clone https://github.com/CarmineD8/slam_gmapping
 ```
 Since ROS noetic is used, make sure to also have the 'ros navigation stack' installed by executing:
